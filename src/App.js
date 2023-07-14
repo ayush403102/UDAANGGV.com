@@ -28,7 +28,7 @@ export default function App() {
         <Route path="/gallery" element={<GalleryLanding />}></Route>
         <Route path="/team" element={<Teamlanding />}></Route>
         <Route path="/magazines" element={<MagazineLanding />}></Route>
-        {/* <Route path="*" element={<NoPage />} /> */}
+        <Route path="*" element={<Landing />}></Route>
     </Routes>
   </div>
   );
