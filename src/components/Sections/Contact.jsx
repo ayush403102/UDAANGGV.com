@@ -49,7 +49,7 @@ function Contact() {
 
           console.log(form_data);
 
-          await axios.post('http://127.0.0.1:8000/msg/', form_data, {
+          await axios.post('https://hammerhead-app-ni47s.ondigitalocean.app/msg/', form_data, {
             headers: {
               'content-type': 'multipart/form-data'
             }
@@ -96,20 +96,20 @@ function Contact() {
                 margin: "0px auto 20px",
               }}
             />
-            <p className="font15 greyColor" style={{ margin: "0 12vw" }}>
+            <ContentP className="font15 greyColor" style={{ margin: "0 12vw" }}>
               If you have any doubts or suggestions for us, you can use this space. We'll try to get back to you soon.
 
-            </p>
+            </ContentP>
           </HeaderInfo>
           <form onSubmit = {submitMessage} encType="multipart/form-data">
             <div className="row" style={{ paddingBottom: "30px" }}>
-              <div
+              <Fdiv
                 className="whiteBg col-xs-12 col-sm-12 col-md-6 col-lg-6 shadowPlus radius6"
                 style={{ paddingBottom: "20px" }}
               >
                 <Form>
                   <label className="font15">Name:</label>
-                  <input type="text" id="name" name="name" className="font15" value={name} onChange={(e) => handlename(e)}
+                  <input type="text" id="Name" name="name" className="font15" value={name} onChange={(e) => handlename(e)}
                   />
                   <label className="font15">Email:</label>
                   <input type="text" id="email" name="email" className="font15" value={email} onChange={(e) => handleemail(e)}
@@ -141,7 +141,7 @@ function Contact() {
                     draggable
                     pauseOnHover
                     theme="light"/>
-              </div>
+              </Fdiv>
             
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
               <iframe
@@ -163,8 +163,12 @@ function Contact() {
   );
 }
 
+const Fdiv = styled.div`
+font-family: 'EB Garamond', serif;
+`;
 
 const Hh = styled.h1`
+font-family: 'EB Garamond', serif;
   background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 70%) 10%, hsl(0, 0%, 30%) 30%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -223,6 +227,10 @@ const ButtonInput = styled.input`
   @media (max-width: 991px) {
     margin: 0 auto;
   }
+`;
+
+const ContentP = styled.p`
+font-family: 'Montserrat', sans-serif;
 `;
 
 const SumbitWrapper = styled.div`

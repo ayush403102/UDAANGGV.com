@@ -14,8 +14,8 @@ export default function Magazine(props) {
       <div className="whiteBg" >
       <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Seasons</h1>
-            <p className="font13 regular">
+            <h1 className="font40 semiBold">Flip through the pages of creativity!</h1>
+            {/* <p className="font13 regular">
             Udaan, The Magazine is itself is an institution which prepares its contributors to
             actively participate in whatever is going on around them, which affects there lives.
             Here we try to give artists the confidence as their expression is given rightful exposer
@@ -23,7 +23,7 @@ export default function Magazine(props) {
 
               <br />
               Lets have a look on the previous year magazines:-
-            </p>
+            </p> */}
           </HeaderInfo>
           <Magazines>
           <div id='model1'>
@@ -52,6 +52,7 @@ const Wrapper = styled.section`
 const HeaderInfo = styled.div`
     text-align: center;
     margin-bottom:30px;
+    font-family: 'EB Garamond', serif;
 `;
 const Magazines = styled.div`
 #model1 .description

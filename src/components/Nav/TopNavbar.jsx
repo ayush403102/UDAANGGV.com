@@ -50,6 +50,13 @@ export default function TopNavbar() {
             {/* <BurgerIcon /> */}<svg id="Layer_2" enable-background="new 0 0 32 32" width={20.459} height={50.42} viewBox="0 0 32 32"  xmlns="http://www.w3.org/2000/svg"><path d="m29 31.981h-8.334c-1.654 0-3-1.346-3-3v-8.334c0-1.654 1.346-3 3-3h8.334c1.654 0 3 1.346 3 3v8.334c0 1.655-1.346 3-3 3zm-8.334-12.334c-.552 0-1 .448-1 1v8.334c0 .552.448 1 1 1h8.334c.552 0 1-.448 1-1v-8.334c0-.552-.448-1-1-1zm-7.521 12.291h-12.145c-.553 0-1-.447-1-1s.447-1 1-1h12.145c.553 0 1 .447 1 1s-.448 1-1 1zm0-6.052h-12.145c-.553 0-1-.447-1-1s.447-1 1-1h12.145c.553 0 1 .447 1 1s-.448 1-1 1zm.189-6.052h-12.334c-.553 0-1-.447-1-1s.447-1 1-1h12.334c.553 0 1 .447 1 1s-.447 1-1 1zm15.666-5.456h-8.334c-1.654 0-3-1.346-3-3v-8.334c0-1.654 1.346-3 3-3h8.334c1.654 0 3 1.346 3 3v8.334c0 1.654-1.346 3-3 3zm-8.334-12.334c-.552 0-1 .448-1 1v8.334c0 .552.448 1 1 1h8.334c.552 0 1-.448 1-1v-8.334c0-.552-.448-1-1-1zm-9.332 12.334h-8.334c-1.654 0-3-1.346-3-3v-8.334c0-1.654 1.346-3 3-3h8.334c1.654 0 3 1.346 3 3v8.334c0 1.654-1.346 3-3 3zm-8.334-12.334c-.552 0-1 .448-1 1v8.334c0 .552.448 1 1 1h8.334c.552 0 1-.448 1-1v-8.334c0-.552-.448-1-1-1z"/></svg>
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
+          <li className="semiBold font15 pointer navlist">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{scale: 0.8}}>
+              <Link style={{ padding: "10px 15px" }} to="/"  offset={-80}>
+                Home
+              </Link>
+            </motion.div>
+            </li>
             <li className="semiBold font15 pointer navlist">
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{scale: 0.8}}>
               <Link style={{ padding: "10px 15px" }} to="/team"  offset={-80}>

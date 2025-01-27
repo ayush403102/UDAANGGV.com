@@ -1,7 +1,7 @@
 import React,{useRef} from 'react'
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import Modal from './Modal';
+// import Modal from './Modal';
 // Components
 // import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
@@ -14,6 +14,11 @@ import AddImage4 from "../../assets/img/add_udaan_8.jpg";
 export default function ContentInvite() {
   const [openModal, setOpenModal] = React.useState(false)
     const scrollRef = useRef(null)
+    const handleButtonClick = () => {
+    setOpenModal(true);
+    // Redirect to the Google Form link
+    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfWj7bnad8OhfYhtM56MvKs8XAnDuzM0O8bWZk3fF--xbe8iA/viewform';
+  };
   return (
     <Wrapper >
       <div className="whiteBg">
@@ -21,7 +26,8 @@ export default function ContentInvite() {
           <HeaderInfo >
             <h4 className="font15 semiBold">Get excited!</h4>
             <h1 className="font40 extraBold">We are accepting submissions</h1>
-            <p className="font13 regular">
+            <br/>
+            <ContentP className="font13">
             Season X of UDAAN magazine is now inviting submissions for the 2022-23 issue.
 Submissions are open from the 35th of November 2022 to the 35th of December 2022. You
 can submit your content online in the given form below or offline in the UDAAN drop-boxes
@@ -29,7 +35,7 @@ placed at all important locations across the university.
 
               <br />
               The categories under which you can submit are-
-            </p>
+            </ContentP>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             
@@ -89,22 +95,21 @@ placed at all important locations across the university.
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">Put on your creative hats!</h4>
+                <ContentP className="font15 semiBold">Put on your creative hats!</ContentP>
                 <h2 className="font40 extraBold">A Study of Creativity</h2>
-                <p className="font15">
+                <ContentP className="font15">
                 We are eager to see your flair so don't hesitate to flaunt your best works.
-                </p>
+                </ContentP>
                 <ButtonsRow
                   className="flexNullCenter"
                   style={{ margin: "30px 0" }}
                 >
                   <div style={{ width: "190px" }}>
                     <FullButton
-                      mode="dark"
-                      title="Upload Content"
-                      action={() => setOpenModal(true)}
-                    />
-                    <Modal open={openModal} onClose = {() => setOpenModal(false)} />
+        mode="dark"
+        title="Upload Content"
+        action={handleButtonClick}
+      />
                   </div>
                   <ContactButton style={{ width:"190px" }}>
                     <a href = "#cont">
@@ -195,7 +200,12 @@ const ServiceBoxWrapper = styled.div`
 const HeaderInfo = styled.div`
     text-align: center;
     margin-bottom:30px;
+    font-family: 'EB Garamond', serif;
 `;
+const ContentP = styled.p`
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+`
 const Advertising = styled.div`
   margin: 20vh 0;
   padding: 100px 0;

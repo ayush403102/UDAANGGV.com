@@ -17,23 +17,10 @@ function Modal({ open, onClose }) {
   const [contact, setcontact] = React.useState("")
   const [dept, setdept] = React.useState("")
   const [content, setcontent] = React.useState(null)
-  const [univ, setuniv] = React.useState("")
+  const [college, setcollege] = React.useState("")
   const [error, setError] = React.useState("");
 
-        const checkEmail = (e) => {
-          setemail(e.target.value);
-
-          if(regex.test(email) === false){
-            setError('Please enter valid email address!!');
-          }
-          
-          else {
-            setError('');
-            const email = e.target.value;
-            console.log(email);
-            setemail(email)
-          }
-        }
+        
 
 
 
@@ -43,11 +30,11 @@ function Modal({ open, onClose }) {
           setname(name)
         }
 
-        // const handleemail = (event)=>{
-        //   const email = event.target.value;
-        //   console.log(email);
-        //   setemail(email)
-        // }
+        const handleemail = (event)=>{
+          const email = event.target.value;
+          console.log(email);
+          setemail(email)
+        }
         const handletype_content = (event)=>{
           const type_content = event.target.value;
           console.log(type_content);
@@ -69,14 +56,29 @@ function Modal({ open, onClose }) {
           setcontent(content)
              
         }
-        const handleuniv = (event)=>{
-          const univ = event.target.value;
-          console.log(univ);
-          setuniv(univ)
+        const handlecollege = (event)=>{
+          const college = event.target.value;
+          console.log(college);
+          setcollege(college)
         }
 
+        // const checkEmail = (e) => {
+        //   setemail(e.target.value);
+
+        //   if(regex.test(email) === false){
+        //     setError('Enter a valid email address!');
+        //   }
+          
+        //   else {
+        //     setError('');
+        //     const email = e.target.value;
+        //     console.log(email);
+        //     setemail(email)
+        //   }
+        // }
+
         const submitContributor = async(e)=>{
-          if(email!='' && !{error}){
+          // if(email!='' && !{error}){
           e.preventDefault();
           
           let form_data = new FormData();
@@ -85,10 +87,11 @@ function Modal({ open, onClose }) {
           form_data.append('type_content', type_content)
           form_data.append('contact', contact)
           form_data.append('dept', dept)
+          form_data.append('college', college)
           form_data.append('content', content)
 
           console.log(form_data);
-          await axios.post('http://127.0.0.1:8000/content/', form_data, {
+          await axios.post('https://hammerhead-app-ni47s.ondigitalocean.app/content/', form_data, {
             headers: {
               'content-type': 'multipart/form-data'
             }
@@ -119,10 +122,7 @@ function Modal({ open, onClose }) {
             });
           })
         }
-        else{
-          setError('Enter the valid email address!!')
-        }
-        }
+        // }
 
   
 
@@ -150,11 +150,11 @@ function Modal({ open, onClose }) {
   
        typewriter
         
-       .typeString("Udaan Welcomes You to showcase your talent")
+       .typeString("UDAAN Welcomes You!")
          
        .pauseFor(1000)
        .deleteAll()
-       .typeString("Fill The Form and scroll down to submit")
+       .typeString("Scroll down to Submit")
        .start();
        }}
        />
@@ -170,7 +170,7 @@ function Modal({ open, onClose }) {
                         <Labeled className="font15">Name:</Labeled>
                         <input type="text" id="name" name="name" className="font15" value={name} onChange={(e) => handlename(e)}/>
                         <Labeled className="font15">Email:</Labeled>
-                        <input type="text" id="email" name="email" className="font15" value={email} onChange={(e) => checkEmail(e)}/>
+                        <input type="text" id="email" name="email" className="font15" value={email} onChange={(e) => handleemail(e)}/>
                         <Labeled  className="font15">Type of content:</Labeled>
                         <input list = "contType" type="text" id="type_content" name="type_content" className="font15" value={type_content} onChange={(e) => handletype_content(e)}/>
                           <datalist id="contType">
@@ -220,7 +220,11 @@ function Modal({ open, onClose }) {
                             <option value="Department of Electronics"/>
                           </Dropdown>
                           <Labeled className="font15">College/University:</Labeled>
-                        <input type="text" id="univ" name="univ" className="font15" value={univ} onChange={(e) => handleuniv(e)}/>
+                        <input list="Clg" id="college" name="college" className="font15" value={college} onChange={(e) => handlecollege(e)}/>
+                        <datalist id="Clg">
+                          <option value = "other"/>
+                            <option value="Guru Ghasidas Vishwavidyalaya"/>
+                          </datalist>
                         <Wrap className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <Wrapheader>Upload The File</Wrapheader>
                         <Wrapform action="#">

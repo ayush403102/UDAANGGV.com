@@ -340,26 +340,40 @@ export default function Coordinators() {
       <div class="responsive-container-block outer-container">
   <div class="responsive-container-block inner-container">
     <p class="text-blk section-head-text">
-      Meet Our <b style={{fontSize:"30px"}} class = "position">Coordinotors</b>
+      Meet Our <b style={{fontSize:"30px"}} class = "position">Coordinators</b>
     </p>
     <br/>
     <br/>
     <div class="responsive-container-block">
-      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div class="team-card">
           <div class="img-wrapper">
-            <img class="team-img" src={ManishSir} alt=""/>
+          <img class="team-img" src={Gaurav} alt=""/>
           </div>
           <p class="text-blk name">
-            Dr. Manish Shrivastava
+            Gaurav Sonkar
           </p>
           <p class="text-blk position">
-            Teacher Coordinator
-            <p style={{textAlign:"center",fontSize:"13px"}}>Registrar</p>
-            <p style={{textAlign:"center",fontSize:"13px"}}>Guru Ghasidas Vishwavidyalaya</p>
+          Student Cordinator
           </p>
         </div>
       </div>
+      
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+        <div class="team-card">
+          <div class="img-wrapper">
+          <img class="team-img" src={Maniksir} alt=""/>
+          </div>
+          <p class="text-blk name">
+            Manik Raghuvanshi
+          </p>
+          <p class="text-blk position">
+          Student Cordinator
+          </p>
+
+        </div>
+      </div>
+
       <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div class="team-card">
           <div class="img-wrapper">
@@ -374,33 +388,7 @@ export default function Coordinators() {
 
         </div>
       </div>
-      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-        <div class="team-card">
-          <div class="img-wrapper">
-          <img class="team-img" src={Maniksir} alt=""/>
-          </div>
-          <p class="text-blk name">
-            Manik
-          </p>
-          <p class="text-blk position">
-          Student Cordinator
-          </p>
-
-        </div>
-      </div>
-      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-        <div class="team-card">
-          <div class="img-wrapper">
-          <img class="team-img" src={Gaurav} alt=""/>
-          </div>
-          <p class="text-blk name">
-            Gaurav Sonkar
-          </p>
-          <p class="text-blk position">
-          Student Cordinator
-          </p>
-        </div>
-      </div>
+      
     </div>
   </div>
 </div>

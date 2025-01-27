@@ -29,7 +29,18 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
       </SidebarHeader>
 
       <UlStyle className="flexNullCenter flexColumn ">
-      
+      <li className="semiBold font15 pointer navlist">
+          <Link
+            onClick={() => toggleSidebar(!sidebarOpen)}
+            activeClass="active"
+            className="darkColor navA"
+            style={{ padding: "10px 15px" }}
+            to="/"
+            offset={-60}
+          >
+            Home
+          </Link>
+        </li>
         <li className="semiBold font15 pointer navlist">
           <Link
             onClick={() => toggleSidebar(!sidebarOpen)}

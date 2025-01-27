@@ -15,7 +15,7 @@ function MagazineLanding() {
   return (
       <div style={{overflowX: "hidden"}}>
         <SocialIcon />
-        <Header img = {HeaderImage} Greeting = "Read Our" title="Magazines Galore" salutation="" button="Start Reading" ButtonLink = "#Magz" content="Explore with us the yesteryears, a sneak peek into previous seasons of UDAAN!"/>
+        <Header img = {HeaderImage} Greeting = "Read Our" title="Magazine Galore" salutation="" button="Start Reading" ButtonLink = "#Magz" content="Explore with us the yesteryears, a sneak peek into previous seasons of UDAAN!"/>
         <Magazine/>
         <Contact />
         <Footer />

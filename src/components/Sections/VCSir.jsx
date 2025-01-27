@@ -20,7 +20,8 @@ export default function VCSir() {
                                 <h2>Prof. Alok Kumar Chakrawal</h2>
                                 <h4>Vice-Chancelor</h4>
                                 <h4>Guru Ghasidas Vishwavidyalaya</h4>
-                               <p class="is-size-6 has-text-weight-normal">Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non miy</p>
+                               <p class="is-size-6 has-text-weight-normal">We are grateful for our hon’ble Vice Chancellor, Mr Alok Chakrwal sir, the entity behind this prestigious institution and all its glorious endeavours. We are grateful to him for providing a supportive environment and always encouraging new initiatives by the students. His grace and energy always inspire us to work towards making serving this institution and society. 
+</p>
                             </div>
                         </div>
                     </div>
@@ -78,5 +79,8 @@ padding-top: 6vh;
 @media (max-width: 768px) {
   .is-horizontal {
     flex-direction: column;
+  }
+  .card-image{
+    margin-left: 3vw;
   }
 }`;

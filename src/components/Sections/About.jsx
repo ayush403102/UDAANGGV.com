@@ -117,7 +117,7 @@ const scale = useTransform(scrollYProgress, [0.4, 1], [1.1, 2]);
               <Uname className="font30 extraBold">
                 Guru Ghasidas Vishwavidyalaya, Bilaspur
               </Uname>
-              <UContent className="font15">
+              <UContent className="font16">
                 Established in 1983 and designated the status of a central
                 university in 2009, Guru Ghasidas Vishwavidyalaya is not only an
                 institution of excellence rather a tale of luminaries. A vision
@@ -128,10 +128,10 @@ const scale = useTransform(scrollYProgress, [0.4, 1], [1.1, 2]);
                 departments, the university ensures not only your academic
                 growth but enhances your cultural growth as well. There are
                 different clubs in the university for the students to learn and
-                gain confidence in their skills
+                gain confidence in their skills.
 
               </UContent>
-              <br />
+              {/* <br />
               <UContent className="font15 semiBold">
               💃 Abhinartan ~ The official dance group of GGV 
                 <br />
@@ -140,7 +140,7 @@ const scale = useTransform(scrollYProgress, [0.4, 1], [1.1, 2]);
                 <br />
                 🪶 Udaan ~ The Culture
                 <br /> 🎭 Urchins ~ The University Drama & Play Group
-              </UContent>
+              </UContent> */}
               <ButtonsRow
                 className="flexNullCenter"
                 style={{ margin: "30px 0" }}
@@ -191,11 +191,11 @@ z-index: 0;
 `;
 
 const UContent = styled.p`
-  font-family: 'Lora', serif;
+  font-family: 'Montserrat', sans-serif;
 `;
 
 const Uname = styled.h2`
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'EB Garamond', serif;
   margin-top: 10px;
   margin-bottom: 10px;
 `;
@@ -208,7 +208,7 @@ const Wrapper = styled.section`
 const HeaderInfo = styled.div`
   padding: 10vh 0;
   @media (max-width: 860px) {
-    text-align: center;
+    justify-content: space-evenly;
   }
 `;
 const Advertising = styled.div`

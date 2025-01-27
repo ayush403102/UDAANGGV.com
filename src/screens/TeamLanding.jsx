@@ -1,7 +1,9 @@
 import React, { useState, useLayoutEffect } from "react";
+import styled from "styled-components";
 import { List } from "semantic-ui-react";
 import Coordinators from "../components/Sections/Coordinators";
 import VCSir from "../components/Sections/VCSir";
+import ManishSir from "../components/Sections/ManishSir";
 // Sections
 import SocialIcon from "../components/Nav/side_social_icons";
 import Header from "../components/Sections/Header";
@@ -66,6 +68,23 @@ import SUMANSHRIWAS from "../assets/img/Team/SUMANSHRIWAS.JPG";
 import AKHILPATEL from "../assets/img/Team/AKHILPATEL.JPG";
 
 
+const Teamdiv = styled.div`
+.buttonD{
+  border : 1px solid black;
+  background-color: black;
+  color:white;
+  border-radius: 20px;
+  padding:0.5vh 0.5vw 0.5vh 0.5vw;
+  margin:0.5vh 0.5vw 0.5vh 0.5vw;
+  :hover{
+    transform: scale(1.05);
+  }
+}
+p{
+  text-align: center;
+  display: inline-flex;
+}
+`;
 
 
 function TeamLanding() {
@@ -86,63 +105,65 @@ function TeamLanding() {
         content="Our people are what turn this club into a home away from home. Each one fits and works in unison to produce the magnum opus that UDAAN is. Come let’s know the parts that make up the whole."
       />
       <VCSir/>
-      <div style={{paddingTop:"10vh",textAlign:"center"}} id="teamnav">
-        <List bulleted horizontal link >
-          <List.Item className="pointer" as='a'
-            onClick={() => setActive("FirstCard")}
-          >
-            Website Board
-          </List.Item>
-          &nbsp;
-          • 
-          &nbsp;
-          <List.Item className="pointer" as='a'
+      <ManishSir/>
+      <Teamdiv style={{paddingTop:"10vh",textAlign:"center"}} id="teamnav">
+        <ol>
+        <p className="pointer buttonD"
             onClick={() => setActive("SecondCard")}
           >
             Art & design Board
-          </List.Item>
+          </p>
           &nbsp;
           • 
           &nbsp;
-          <List.Item className="pointer" as='a'
-            onClick={() => setActive("ThirdCard")}
-          >
-            Hindi Editorial Board
-          </List.Item>
-          &nbsp;
-          • 
-          &nbsp;
-          <List.Item className="pointer" as='a'
+          <p className="pointer buttonD"
             onClick={() => setActive("FourthCard")}
           >
             English Editorial Board
-          </List.Item>
+          </p>
           &nbsp;
           • 
           &nbsp;
-          <List.Item className="pointer" as='a'
+          <p className="pointer buttonD"
             onClick={() => setActive("FifthCard")}
           >
             Graphic Design Board
-          </List.Item>
+          </p>
           &nbsp;
           • 
           &nbsp;
-          <List.Item className="pointer" as='a'
+          <p className="pointer buttonD"
+            onClick={() => setActive("ThirdCard")}
+          >
+            Hindi Editorial Board
+          </p>
+          &nbsp;
+          • 
+          &nbsp;
+          <p className="pointer buttonD"
             onClick={() => setActive("SixthCard")}
           >
             Marketing Board
-          </List.Item>
+          </p>
           &nbsp;
           • 
           &nbsp;
-          <List.Item className="pointer" as='a'
+          <p className="pointer buttonD"
             onClick={() => setActive("SeventhCard")}
           >
             Photography Board
-          </List.Item>
-        </List>
-      </div>
+          </p>
+          &nbsp;
+          • 
+          &nbsp;
+          <p className="pointer buttonD"
+            onClick={() => setActive("FirstCard")}
+          >
+            Website Board
+          </p>
+          
+        </ol>
+      </Teamdiv>
       <div>
       {active === "CoordinatorCard" && (
           <Coordinators/>
@@ -157,8 +178,8 @@ function TeamLanding() {
             member2Name="Ayush Agarwal"
             member7Name="Sweta Raj"
             member3Name="Jyoti Saini"
-            member5Name="Rahul Kumar Soni"
-            member1Name="Atharva Bawsar"
+            member5Name="Rahul Kumar"
+            member1Name="Atharva Bhawsar"
             member4Name="Monalisa"
             member6Name="Srijani Som"
             M2={AtharvaBhawsar}
@@ -179,7 +200,7 @@ function TeamLanding() {
             headName="Ayush Yadav"
             // member="Member"
             member1Name="Jhanvee Singh"
-            member2Name="Kratika Gupta"
+            member2Name="Kartika Gupta"
             member3Name="Piyush Rajak"
             member4Name="Shweta Tamrakar"
             member5Name="Tamanna Jangra"
@@ -200,14 +221,14 @@ function TeamLanding() {
             board="Hindi Editorial Board"
             boardContent="Creative minds that pen down impelling thoughts, weaving words into stories. Whether it be reaching the masses through their poetic captions on social media or the thought provoking content you see in our magazines"
             // head="Member"
-            headName="AishwaryaSahu"
+            headName="Aishwarya Sahu"
             // member="Member"
             member1Name="Ashutosh Yadav "
             member2Name="Nidhi Tiwari "
             member3Name="Priyanshu Kashyap"
             member4Name="Shivam Sati"
             // member5Name="Ratnesh Singh Tandon"
-            member5Name="Vidhi Agarwal"
+            member5Name="Vidhi Agrawal"
             // member7Name="Lakhnee Sahu"
             // M6={RatneshSingh}
             M2={AshutoshYadav}
@@ -231,7 +252,7 @@ function TeamLanding() {
             member3Name="Prakhar Gupta"
             member4Name="Sakshi Jha"
             member2Name="Nikita Dubey"
-            member7Name="Shubhshree Gupta"
+            member7Name="Shubhshri Gupta"
             M3={NIKITADUBEY}
             M5={SAKSHIJHA}
             M6={SHUBHANGIBAJPAYEE}
@@ -248,8 +269,8 @@ function TeamLanding() {
             // head="Board Head"
             headName="Lisha Gupta"
             // member="Member"
-            member1Name="Omgupta "
-            member2Name="Prashant Yadav "
+            member1Name="Om gupta "
+            member2Name="Parshant Yadav "
             member3Name="Ritika Ahirwar"
             member4Name="Sheetal"
             // member5Name="Nikita Jha"
@@ -271,9 +292,9 @@ function TeamLanding() {
             headName="Akhil Patel "
             // member="Member"
             member1Name="Alankrita Mishra"
-            member2Name="Ashish Kant "
+            member2Name="Ashish Pathak "
             member3Name="Rahul Patel"
-            member4Name="Reshab Yadu"
+            member4Name="Reshabh Yadu"
             member5Name="Suman Srivastav"
             member7Name="Umang Verma"
             //member7Name="Rosy Minj"

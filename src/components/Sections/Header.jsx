@@ -32,7 +32,7 @@ export default function Header(props) {
             <Entry className="Bold darkColor font20">{props.salutation}</Entry>
             </motion.div>
             </CoverEntry>
-            <HeaderP className="font14 darkColor semiBold">
+            <HeaderP className="font15 darkColor semiBold">
               {props.content}
             </HeaderP>
               <BtnWrapper>
@@ -181,7 +181,7 @@ const HeaderP = styled.div`
     text-align: center;
     max-width: 100%;
   }
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
 `;
 const BtnWrapper = styled.div`
   max-width: 190px;
