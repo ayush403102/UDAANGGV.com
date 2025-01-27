@@ -12,8 +12,7 @@ export default function ManishSir() {
                   <div class="content">
                     <h2>Dr. Manish Shrivastava</h2>
                     <h3>Teacher Coordinator, UDAAN</h3>
-                    <h4>Registrar, Guru Ghasidas Vishwavidyalaya</h4>
-                    <p>The life source of UDAAN, we are indebted to our hon’ble Registrar, Mr Manish Shrivasatava sir, for taking up the role of our teacher coordinator and guiding us throughout our journey of twelve years. Your support encourages us to keep going and improving ourselves with every edition. If it wasn’t for your love of creativity and student welfare, UDAAN would not have been possible.</p>
+                    <p>The life source of UDAAN, we are indebted to Mr Manish Shrivasatava sir, for taking up the role of our teacher coordinator and guiding us throughout our journey of twelve years. Your support encourages us to keep going and improving ourselves with every edition. If it wasn’t for your love of creativity and student welfare, UDAAN would not have been possible.</p>
                   </div>
                 </div>
                 <div class="card-image">
@@ -41,7 +40,7 @@ padding-bottom:13vh;
 }
 
 .card-image{
-  margin-left: 15vw;
+  margin-left: 5vw;
 }
 
 .is-horizontal .card-image .image {
@@ -57,9 +56,21 @@ img{
   border-radius: 2rem;
 }
 
+
+
 .is-horizontal .card-content {
-  text-align: center;
+  text-align: left;
   padding-top: 6vh;
+  border: 2px solid #37D6F4;
+  justify-content: center;
+  padding: 5vw;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.is-horizontal .card-content h3{
+  text-align: left;
+  color: #37D6F4;
 }
 
 @media (min-width: 768px) {

@@ -11,6 +11,12 @@ import img7 from "../../assets/img/add_udaan_7.jpg";
 import img8 from "../../assets/img/add_udaan_8.jpg";
 import img9 from "../../assets/img/add_udaan_9.jpg";
 import img10 from "../../assets/img/add_udaan_10.jpg";
+import img11 from "../../assets/img/Gallery/1.jpg";
+import img12 from "../../assets/img/Gallery/2.jpg";
+import img13 from "../../assets/img/Gallery/2.png";
+import img14 from "../../assets/img/Gallery/3.jpg";
+import img15 from "../../assets/img/Gallery/14.jpg";
+import img16 from "../../assets/img/Gallery/Img5.JPG";
 import carousel1 from "../../assets/img/Gallery/Img1.JPG";
 import carousel2 from "../../assets/img/Gallery/Img2.JPG";
 import carousel3 from "../../assets/img/Gallery/Img3.JPG";
@@ -23,7 +29,6 @@ import carousel9 from "../../assets/img/Gallery/Img9.JPG";
 import carousel10 from "../../assets/img/Gallery/Img10.JPG";
 import { Carousel } from 'react-carousel-minimal';
 import React from "react";
-
 
 
 const photos = [
@@ -131,9 +136,50 @@ export default function Gallery() {
             }}
           />
         </div>
+      </div> 
+      <br/><br/><br/><br/><br/><br/><br/>
+      {/* <PhotoAlbum layout="masonry" photos={photos} /> */}
+      <section class = "photo gallary">
+    <div class="container">
+      <div class="heading">
+        <h3>Photo <span>Gallery</span></h3>
       </div>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      <PhotoAlbum layout="masonry" photos={photos} />
+      <div class="box">
+        
+        <div class="dream">
+          <img class="team-img" src={img1} alt=""/>
+           <img class="team-img" src={img2} alt=""/>
+            <img class="team-img" src={img3} alt=""/>
+             <img class="team-img" src={img4} alt=""/>
+             <img class="team-img" src={img16} alt=""/>
+              
+        </div>
+  
+          <div class="dream">
+          <img class="team-img" src={img6} alt=""/>
+           <img class="team-img" src={img7} alt=""/>
+            <img class="team-img" src={img8} alt=""/>
+             <img class="team-img" src={img9} alt=""/>
+              <img class="team-img" src={img10} alt=""/>
+              
+        </div>
+  
+          <div class="dream">
+          <img class="team-img" src={img11} alt=""/>
+           <img class="team-img" src={img12} alt=""/>
+            <img class="team-img" src={img13} alt=""/>
+             <img class="team-img" src={img14} alt=""/>
+              <img class="team-img" src={img15} alt=""/>
+              <img class="team-img" src={img5} alt=""/>
+        </div>
+  
+  
+  
+  
+      </div>  
+  
+    </div>
+  </section>
     </Wrapper>
   )
 }
@@ -142,4 +188,90 @@ const Wrapper = styled.section`
   padding: 8vw;
   width: 100%;
   min-height: 100vh;
+
+  .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+}
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 100%;
+  padding-bottom: 5px;
+  border-radius: 30px;
+}
+
+img:hover {
+  transform: scale(1.02); 
+
+}
+
+
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 1em;
+
+}}
 `;

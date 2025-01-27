@@ -104,7 +104,7 @@ function TeamLanding() {
         ButtonLink="#teamnav"
         content="Our people are what turn this club into a home away from home. Each one fits and works in unison to produce the magnum opus that UDAAN is. Come let’s know the parts that make up the whole."
       />
-      <VCSir/>
+      {/* <VCSir/> */}
       <ManishSir/>
       <Teamdiv style={{paddingTop:"10vh",textAlign:"center"}} id="teamnav">
         <ol>

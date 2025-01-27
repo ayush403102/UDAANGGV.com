@@ -3,6 +3,7 @@ import React, {useState, useEffect} from "react";
 import SocialIcon from "../components/Nav/side_social_icons";
 import Header from "../components/Sections/Header";
 import ContentInvite from "../components/Sections/contentInvite";
+import Patrons from "../components/Sections/patrons";
 import About from "../components/Sections/About";
 import Contact from "../components/Sections/Contact";
 import Footer from "../components/Sections/Footer";
@@ -41,12 +42,10 @@ function Landing() {
 
       <>
         <SocialIcon />
-        <Header img = {HeaderImage} Greeting = "Welcome to" title="UDAAN" salutation="it's u!" button="Submit Content" ButtonLink = "#contentInvite" content="The official magazine of GGV welcomes you. It’s happening right
-              here at UDAAN, the homeland of creative geniuses of GGV, harboring
-              a great fusion of talent and culture from across the country. We
-              invite you to be a part of this phenomenal journey and live this
-              experience with us. This creative space has been built for You,
-              feel free to explore ahead!"/>
+        <Header img = {HeaderImage} Greeting = "Welcome to" title="UDAAN" salutation="it's u!" button="Submit Content" ButtonLink = "#contentInvite" content="The official magazine of GGV welcomes you. It’s happening right here at UDAAN, the homeland of creative geniuses of GGV, harboring a great fusion of talent and culture from across the country. We invite you to be a part of this phenomenal journey and live this
+        experience with us. This creative space has been built for You, feel free to explore ahead!"/>
+        <Patrons />
+
         <About style={{position:"absolute"}} />
         <ContentInvite />
         <Contact />
