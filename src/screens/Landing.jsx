@@ -9,7 +9,7 @@ import Contact from "../components/Sections/Contact";
 import Footer from "../components/Sections/Footer";
 import { Dna  } from "react-loader-spinner";
 import styled from "styled-components";
-import HeaderImage from "../assets/img/add_udaan_5.jpg";
+import HeaderImage from "../assets/img/add_udaan_5.1.jpg";
 
 function Landing() {
   const[loading, setLoading] = useState(false);

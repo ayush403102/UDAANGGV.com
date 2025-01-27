@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import img1 from "../../assets/img/Team/ManishSir.JPG";
+import img1 from "../../assets/img/Team/ManishSir.jpg";
 
 
 export default function ManishSir() {

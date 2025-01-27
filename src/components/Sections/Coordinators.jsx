@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Nibhrit from "../../assets/img/Team/Nibhrit.jpg";
 import Maniksir from "../../assets/img/Team/Maniksir.jpg";
-import ManishSir from "../../assets/img/Team/ManishSir.JPG";
-import Gaurav from "../../assets/img/Team/Gaurav.JPG";
+import ManishSir from "../../assets/img/Team/ManishSir.jpg";
+import Gaurav from "../../assets/img/Team/Gaurav.jpg";
 
 const Wrapper = styled.div`
 .text-blk {

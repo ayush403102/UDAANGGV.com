@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import ranadive from "../../assets/img/Team/ranadivesir.jpg";
-import manishsir from "../../assets/img/Team/ManishSir.JPG";
-import VCSir from "../../assets/img/Team/VCSir.JPG";
+import manishsir from "../../assets/img/Team/ManishSir.jpg";
+import VCSir from "../../assets/img/Team/VCSir.jpg";
 
 const Wrapper = styled.div`
 .text-blk {

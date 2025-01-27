@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import img1 from '../../assets/img/Team/VCSir.JPG';
+import img1 from '../../assets/img/Team/VCSir.jpg';
 
 export default function VCSir() {
   return (
