@@ -29,7 +29,7 @@ export default function ContentInvite() {
             <br/>
             <ContentP className="font13">
             Season X of UDAAN magazine is now inviting submissions for the 2022-23 issue.
-Submissions are open from the 35th of November 2022 to the 35th of December 2022. You
+Submissions are open from the 16th July 2023 to the 10th August 2023. You
 can submit your content online in the given form below or offline in the UDAAN drop-boxes
 placed at all important locations across the university.
 
@@ -105,11 +105,17 @@ placed at all important locations across the university.
                   style={{ margin: "30px 0" }}
                 >
                   <div style={{ width: "190px" }}>
-                    <FullButton
+                  <FullButton
         mode="dark"
         title="Upload Content"
         action={handleButtonClick}
       />
+                    {/* <FullButton
+                      mode="dark"
+                      title="Upload Content"
+                      action={() => setOpenModal(true)}
+                    />
+                    <Modal open={openModal} onClose = {() => setOpenModal(false)} /> */}
                   </div>
                   <ContactButton style={{ width:"190px" }}>
                     <a href = "#cont">
