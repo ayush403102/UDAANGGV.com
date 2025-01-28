@@ -351,7 +351,7 @@ export default function Patrons() {
           </div>
           <p class="text-blk name">
           
-  Prof. (Dr) Alok Kumar Chakrawa
+  Prof. (Dr) Alok Kumar Chakrawal
           </p>
           <p class="text-blk position">
           Vice-Chancellor, GGV
